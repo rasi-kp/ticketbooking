@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ticket Booking</title>
+    <style>
+        button {
+            background-color: #04AA6D;
+            color: rgb(255, 255, 255);
+            padding: 8px 20px;
+            width: 100px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 550px;
+
+        }
+
+        .block {
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.3);
+            /* Black w/ opacity */
+            padding-top: 1px;
+
+        }
+
+        .container {
+            background-color: #fefefe;
+            margin: 2% auto;
+            border: 2px solid #888;
+            width: 32%;
+            height: 50%;
+            border-radius: 10px;
+            padding: 16px;
+            font-size: 20px;
+            padding-top: 1px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 13px 20px;
+            margin: 8px 0;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            flex-flow: wrap;
+            height: 12%;
+            font-size: 20px;
+            justify-content: space-around;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: row;
+            width: 180px;
+        }
+        .header{
+           height: 35px;
+        }
+
+        .icon-container {
+            margin-bottom: 19px;
+            padding: 7px 0;
+            font-size: 24px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body style="background-image:url('images/r1.jpg');">
+    <div class="navbar">
+        <a href="#" class="active">INDIAN RAILWAY</a>
+        <a href="index.html" class="right">Logout</a>
+        <a href="seat.html" class="right">Seat Boking</a>
+        <a href="#" class="right">More</a>
+    </div>
+    <h1 style="text-align: center;color: rgb(18, 17, 17);">Welcome to Indian Railway</h1>
+
+    <div class="block">
+        <div class="container">
+            <div class="header">
+                <h2 style="color:rgba(29, 29, 227, 0.831); text-align: center;">Payment Page</h2>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h4 style="color:blue;">Billing Address</h4>
+                </div>
+                <div class="column">
+                    <h4 style="color:blue;">Card Details</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <form>
+                        <label><i class="fa fa-user"></i>Full Name</label>
+                        <input type="text" placeholder="Rasi k P" name="name" id="">
+                        <label><i class="fa fa-envelope"></i>Email</label>
+                        <input type="text" placeholder="rasir239@gmail.com" name="name" id="">
+                        <label><i class="fa fa-address-card-o"></i>Address</label>
+                        <input type="text" placeholder="Adress" name="name" id="">
+                        <label><i class="fa fa-institution"></i>City</label>
+                        <input type="text" placeholder="Kerala" name="name" id="">
+                        <div class="column">
+                            <label>State: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                            <label>Zip:</label>
+
+                        </div>
+                        <div class="column">
+                            <input type="text" placeholder="NY" name="name" id="">
+                            <input type="text" placeholder="670591" name="name" id="">
+                        </div>
+                    </form>
+                </div>
+                <div class="column">
+                    <form>
+                        <label>Accepted Card</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                        <label>Name on card</label>
+                        <input type="text" placeholder="Rasi k P" name="name" id="">
+                        <label>Credit card No</label>
+                        <input type="text" placeholder="6778 7464 5656" name="name" id="">
+                        <label>Exp Month</label>
+                        <input type="text" placeholder="07" name="name" id="">
+                        <div class="column">
+                            <label>Exp Year: &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                            <label>CVV:</label>
+
+                        </div>
+                        <div class="column">
+                            <input type="text" placeholder="2027" name="name" id="">
+                            <input type="text" placeholder="***" name="name" id="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <button onclick="myfunction()">
+                <a href="index.html">Submit</a>
+            </button>
+        </div>
+    </div>
+<script>
+    function myfunction()
+    {
+        alert("payment sucess")
+    }
+
+</script>
+</body>
+
+</html>

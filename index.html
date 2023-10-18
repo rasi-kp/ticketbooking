@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ticket Booking</title>
+        <style>
+            .block
+            {       
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+                padding-top: 1px;
+                
+            }
+            .container
+            {    
+                background-color: #fdfdfdd9;
+                margin: 5% auto ;
+                border: 2px solid #b62121bd;
+                width: 25%;
+                height: 400px;
+                border-radius: 10px;
+                padding: 16px;
+                font-size: 20px;
+            }
+            
+            input[type=text], input[type=password] 
+            {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            button 
+            {
+                background-color: #04AA6D;
+                color: white;
+                padding: 13px 20px;
+                margin: 8px 0;
+                cursor: pointer;
+                width: 100%;
+                border: none;
+                border-radius: 5px;
+            }
+            button:hover {
+  opacity: 0.8;
+}
+        </style>
+    </head>
+
+    <body style="background-image:url('images/r1.jpg');">
+        
+        <h1 style="text-align: center;color: rgb(18, 17, 17);">Welcome to Indian Railway</h1>
+        <br>
+        
+        <div class="block">
+            <form class="container" action="details.html">
+                <h2 style="color:blue; text-align: center;">Login Details</h2>
+                 <div class="text">
+                    <label><b>Username:</b></label>
+                   <input type="text" placeholder="Username" name="Username" required><br>
+                    <label><b>Password:</b></label>
+                    <input type="password" placeholder="Password" name="Pasword" required><br>
+                    <button type="submit">
+                        Login
+                    </button><br><br>
+                    <center>
+                        Not have an account?<br>
+                        <a href="signup.html">Register</a>
+                    </center>
+                </div>
+            </form>
+        </div>
+ 
+    </body>
+</html>
+

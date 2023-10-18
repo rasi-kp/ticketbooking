@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ticket Booking</title>
+        <style>
+            .block
+            {       
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+                padding-top: 1px;
+                
+            }
+            .container
+            {    
+                background-color: #fefefe;
+                margin: 5% auto ;
+                border: 2px solid #888;
+                width: 25%;
+                border-radius: 10px;
+                padding: 16px;
+                font-size: 20px;
+            }
+            
+            input[type=text], input[type=password] 
+            {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            button 
+            {
+                background-color: #04AA6D;
+                color: white;
+                padding: 13px 20px;
+                margin: 8px 0;
+                cursor: pointer;
+                width: 100%;
+                border: none;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+
+    <body style="background-image:url('images/r1.jpg');">
+        
+        <h1 style="text-align: center;color: rgb(18, 17, 17);">Welcome to Indian Railway</h1>
+        <br>
+        
+        <div class="block">
+            <form class="container" action="index.html">
+                <h2 style="color:blue; text-align: center;">Register</h2>
+                 <div class="text">
+                    <label><b>Full name:</b></label>
+                   <input type="text" placeholder="Rasi K P" name="Username"><br>
+                   <label><b>Email:</b></label>
+                   <input type="text" placeholder="rasir239@gmail.com" name="Username"><br>
+                   <label><b>Mobile No:</b></label>
+                   <input type="text" placeholder="9605942261" name="Username"><br>
+                    <label><b>Username:</b></label>
+                   <input type="text" placeholder="rasi_k_p" name="Username"><br>
+                    <label><b>Password:</b></label>
+                    <input type="text" placeholder="********" name="Pasword"><br>
+
+                    <button type="submit">
+                        Register
+                    </button>
+                </div>
+            </form>
+        </div>
+ 
+    </body>
+</html>
+

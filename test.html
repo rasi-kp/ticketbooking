@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ticket Booking</title>
+        <style>
+            .block
+            {       
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+                padding-top: 1px;
+                
+            }
+            .container
+            {    
+                background-color: #fefefe;
+                margin: 5% auto ;
+                border: 2px solid #888;
+                width: 25%;
+                border-radius: 10px;
+                padding: 16px;
+                font-size: 20px;
+            }
+            
+            input[type=text], input[type=password] 
+            {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            button 
+            {
+                background-color: #04AA6D;
+                color: white;
+                padding: 13px 20px;
+                margin: 8px 0;
+                cursor: pointer;
+                width: 100%;
+                border: none;
+                border-radius: 5px;
+            }
+            .row
+            {
+                display: flex;
+                flex-direction: column;
+                flex-flow: wrap;
+                background-color: red;
+                margin: 4px;
+                font-size: 20px;
+                justify-content: space-around;
+            }
+            .column
+            {
+                display: flex;
+                flex-direction: row;
+                
+                background-color: #04AA6D;
+                width: 20px;
+            }
+        </style>
+    </head>
+
+    <body style="background-image:url('images/r1.jpg');">
+        
+        <h1 style="text-align: center;color: rgb(18, 17, 17);">Welcome to Indian Railway</h1>
+        <br>
+        
+        <div class="block">           
+            <div class="container">
+                <div class="row">
+                    <h2 style="color:blue; text-align: center;">Payment Page</h2>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h4 style="color:blue;">Billing Address</h4>
+                    </div>
+                    <div class="column">             
+                        <h4 style="color:blue;">Card Details</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <form>
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Rasi k P" name="name" id="">
+                            <label>Email</label>
+                            <input type="text" placeholder="Rasi k P" name="name" id="">
+                            <label>Address</label>
+                            <input type="text" placeholder="Rasi k P" name="name" id="">
+                            <label>City</label>
+                            <input type="text" placeholder="Rasi k P" name="name" id="">
+                        </form> 
+
+                    </div>
+                    <div class="column">
+                        <form>
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Rasi k P" name="name" id="">
+                            <label>Email</label>
+                            <input type="text" placeholder="Rasi k P" name="name" id="">
+                            <label>Address</label>
+                            <input type="text" placeholder="Rasi k P" name="name" id="">
+                            <label>City</label>
+                            <input type="text" placeholder="Rasi k P" name="name" id="">
+                        </form>                     
+                    </div>
+                </div>
+                
+            </div>                           
+                
+        </div>
+ 
+    </body>
+</html>
+
